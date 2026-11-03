@@ -54,7 +54,6 @@ B.Tech (Electrical Engineering), NIT Jalandhar, 2026 · Data Engineering Trainee
 - 🎓 **Amazon ML Summer School 2025**: selected in the top 3,000 of 85,000+ applicants
 - 🌟 **Meesho "Scripted By Her"**: top 50 in the MVP round
 - 🧩 **600+** problems solved on LeetCode
-- 🏫 Academic rank **6/60** in my batch at NIT Jalandhar
 
 ## 🌱 Currently
 
