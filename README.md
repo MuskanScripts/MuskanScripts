@@ -2,7 +2,7 @@
 
 # Hi, I'm Muskan 👋
 
-**Data engineer building pipelines and AI tools · PySpark · SQL · Python · GenAI**
+**Data, AI & backend engineer · PySpark · SQL · Python · FastAPI · Node.js · GenAI**
 
 B.Tech (Electrical Engineering), NIT Jalandhar, 2026 · Data Engineering Trainee at Nagarro
 
@@ -18,6 +18,7 @@ B.Tech (Electrical Engineering), NIT Jalandhar, 2026 · Data Engineering Trainee
 - I work where **data meets AI**: I build pipelines that produce clean, trusted data, then put AI on top so people can actually use it.
 - At Nagarro I work on **PySpark and Databricks** pipelines with a medallion (bronze, silver, gold) design and **Azure Data Factory** orchestration.
 - On the AI side I build **natural-language-to-SQL assistants**, **RAG chatbots** and **multi-agent systems** with Gemini, Groq and Google ADK.
+- On the backend I build **REST APIs** with **FastAPI** and **Node.js/Express**: auth, background workers, caching, and tests that run against real Postgres and Redis in CI.
 - I turn data into decisions with **SQL** and **Power BI** dashboards, and I solve DSA problems in **Java** (600+ on LeetCode).
 
 ## 🤖 Data + AI projects
@@ -29,12 +30,13 @@ B.Tech (Electrical Engineering), NIT Jalandhar, 2026 · Data Engineering Trainee
 | [**Travel Planner Agent**](https://github.com/MuskanScripts/travel_planner_agent) | A multi-agent planner: a root agent picks the intent and passes the request through four sub-agents (attractions, accommodation, transport, itinerary). | Python, Google ADK, Gemini |
 | **Global Superstore Sales Dashboard** | Cleaned sales, returns and people data in Power Query, built DAX measures and KPI visuals with slicers, and published with row-level security so each user sees only their region. | Power BI, Power Query, DAX |
 
-## 🚀 Engineering projects
+## ⚙️ Backend projects
 
 | Project | What it does | Built with |
 | --- | --- | --- |
-| [**IssueRadar (FirstPR)**](https://github.com/MuskanScripts/IssueRadar) | Ranks open GitHub issues on 4 factors (availability, difficulty, skills match, repo health) and explains each rank. CLI plus a 7-screen React dashboard, an MCP server and a daily digest. CI with 300+ tests and accessibility checks (axe: 0 serious WCAG AA violations). | Python, FastAPI, Redis, React, TypeScript, Docker, GitHub Actions |
-| [**HubSpot CRM Console**](https://github.com/MuskanScripts/CRM-Bridge-HubSpot-API-Proxy-Admin-Dashboard) | A stateless Express proxy with 26 REST endpoints over HubSpot contacts, companies, deals and tickets, plus React CRUD screens with live search. | Node.js, Express, React, Tailwind, Docker |
+| [**IssueRadar (FirstPR)**](https://github.com/MuskanScripts/IssueRadar) | Ranks open GitHub issues on 4 factors (availability, difficulty, skills match, repo health) and explains each rank. **Backend:** a FastAPI service and CLI with an Arq/Redis background worker, PostgreSQL, GitHub App sign-in, ETag caching (repeat syncs return 304s) and resumable syncs; an MCP server with 3 read-only tools; a daily digest to email and Telegram via GitHub Actions. CI runs 300+ pytest, Vitest and Playwright tests against real Postgres and Redis, plus lint, type checks, a Docker build and a secret scan. Hosted version in progress. | Python, FastAPI, PostgreSQL, Redis, Arq, Docker, GitHub Actions, React, TypeScript |
+| [**HubSpot CRM Console**](https://github.com/MuskanScripts/CRM-Bridge-HubSpot-API-Proxy-Admin-Dashboard) | A stateless Node.js/Express proxy with **26 REST endpoints** over HubSpot contacts, companies, deals and tickets. Forwards each user's Bearer token per request so no secrets live on the server; request-logging middleware and centralized error handling. React CRUD screens with live search. Containerized with Docker. | Node.js, Express, REST, Axios, React, Tailwind, Docker |
+| [**Timetable Chatbot API**](https://github.com/MuskanScripts/Chatbot-Timetable-MajorProject) | The FastAPI backend behind the RAG chatbot above: intent routing, MongoDB queries, chat memory, Groq rate-limit retries, a profanity filter and timetable PDF generation with ReportLab. | FastAPI, MongoDB, ReportLab, Groq |
 
 ## 🛠️ Tech I work with
 
@@ -45,7 +47,6 @@ B.Tech (Electrical Engineering), NIT Jalandhar, 2026 · Data Engineering Trainee
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat&logo=powerbi&logoColor=black)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
 
 **AI:**
@@ -56,14 +57,22 @@ B.Tech (Electrical Engineering), NIT Jalandhar, 2026 · Data Engineering Trainee
 ![MCP](https://img.shields.io/badge/MCP-000000?style=flat)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
 
-**Engineering:**
+**Backend:**
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white)
+![REST APIs](https://img.shields.io/badge/REST_APIs-02569B?style=flat)
+![OAuth2](https://img.shields.io/badge/OAuth2-EB5424?style=flat)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat&logo=pytest&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white)
+
+**Languages & tools:**
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
@@ -79,10 +88,10 @@ B.Tech (Electrical Engineering), NIT Jalandhar, 2026 · Data Engineering Trainee
 
 - Building a **Data + AI portfolio**: an Azure lakehouse, a real-time CDC pipeline, and an AI agent that answers questions over my own data (RAG + MCP + evals)
 - Learning Spark internals, LLM evaluation and guardrails
-- Building IssueRadar toward a hosted version
+- Building IssueRadar's hosted backend (FastAPI + Arq/Redis worker + Postgres)
 
 <div align="center">
 
-*Open to Data Engineering, Data & AI, and SDE opportunities. Say hi on [LinkedIn](https://www.linkedin.com/in/muskan-nitj).*
+*Open to Data Engineering, Data & AI, Backend and SDE opportunities. Say hi on [LinkedIn](https://www.linkedin.com/in/muskan-nitj).*
 
 </div>
